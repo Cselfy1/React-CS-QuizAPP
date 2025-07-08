@@ -1,0 +1,131 @@
+.auth-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  animation: fadeIn 1.2s ease;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.auth-form {
+  background: #fff;
+  padding: 35px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.8s ease;
+  transition: all 0.3s ease;
+}
+
+.auth-form input {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  color: #000;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-form input::placeholder {
+  color: #999;
+}
+
+.auth-form input:focus {
+  border-color: #000;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+.auth-form button {
+  background-color: #000;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover:not(:disabled) {
+  background-color: #333;
+}
+
+.auth-form button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+.form-title {
+  text-align: center;
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeInTitle 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.error-msg {
+  color: #cc0000;
+  font-weight: 600;
+  text-align: center;
+  user-select: none;
+}
+
+.toggle-link {
+  cursor: pointer;
+  color: #000;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.toggle-link:hover {
+  color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTitle {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
