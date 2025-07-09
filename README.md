@@ -34,7 +34,7 @@ This project is a full-stack quiz application built with a **React** frontend an
 ## Technologies Used
 
 - Frontend: React, TypeScript, CSS-in-JS, Fetch API  
-- Backend: C#, ASP.NET Core Web API  ( make sure you use http://localhost:5087/swagger/index.html when run sever.sln )
+- Backend: C#, ASP.NET Core Web API  ( make sure you use http://localhost:5087/swagger/index.html when run server.sln )
 - Tools: Git, Visual Studio / VS Code  
 
 ## Getting Started
