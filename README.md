@@ -64,7 +64,7 @@ This project is a full-stack quiz application built with a **React** frontend an
 
 ## Screenshots
 
-*(Add screenshots of Login, Quiz, and Result pages here)*
+To be updated...
 
 ## License
 
